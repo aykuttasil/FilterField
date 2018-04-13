@@ -26,7 +26,7 @@ namespace FilterField
 
         private static String FilterFields(String json)
         {
-            var obj = JObject.Parse(json);
+            var obj = JToken.Parse(json);
 
             var properties = typeof(FilterFieldsModel).GetProperties();
 
